@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration form</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <header class="header">
+        <h1 style="color: white;">Registration Form</h1>
+    </header>
+    <section class="form-container">
+        <h2>Fill Your Details</h2>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+        <label for="Email">Email:</label>
+        <input type="email" id="Email"  placeholder="Enter you mail"><br>
+
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" placeholder="Enter your password"><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="dob" id="dob" placeholder="dd-mm-yyyy"><br>
+
+        <label for="gender">Gender</label>
+        <!-- select is used to create a drop down menu -->
+        <!-- option is used to give the choices in the drop down menu, value="" reps the data sent to the server when selected -->
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <label for="hobbies">Hobbies:</label>
+        <input id="hobbies" type="checkbox" name="hobbies"><br>
+
+        <label for="sports">Sports:</label>
+        <input id="sports" type="checkbox" name="sports"><br>
+
+        <label for="music">Music:</label>
+        <input id="music" type="checkbox" name="music"><br>
+
+        <label for="reading">Reading:</label>
+        <input id="reading" type="checkbox" name="reading"><br>
+
+        <label for="favouritecolor">Favourite Color:</label>
+        <input type="color" id="favouritecolor" ><br>
+
+        <label for="picture">Upload Profile Picture:</label>
+        <input class="box1" type="file" id="picture" ><br>
+
+        <label for="message">About Yourself:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write about yourself"></textarea><br>
+
+        <label for="range">Experience Level:</label>
+        <input type="range" id="range" name="experience" min="1" max="10"><br>
+
+        <label for="terms"> <input type="checkbox" id="terms"> I agree to the terms and conditions</label><br>
+
+        <button type="submit">Submit</button><br>
+        <button type="reset">Reset</button>
+
+    </section>
+
+</body>
+</html>
